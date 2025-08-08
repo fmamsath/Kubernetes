@@ -1,1 +1,29 @@
+Kubernetes / Minikube Quick Guide
+
+Prerequisites
+- Docker Desktop running with enough memory
+- Minikube installed
+- kubectl installed
+
+Start Minikube
+minikube start --memory=3000
+
+Check status
+minikube status
+kubectl get nodes
+
+Delete cluster
+minikube delete
+
+Deploy app (example nginx)
+kubectl create deployment myapp --image=nginx
+kubectl expose deployment myapp --type=NodePort --port=80
+kubectl get pods
+kubectl get svc
+minikube service myapp
+
+Troubleshooting
+- Adjust memory if start fails (--memory=3000)
+- Restart Docker Desktop if needed
+- Use wsl --shutdown (Windows) to reset WSL
 
