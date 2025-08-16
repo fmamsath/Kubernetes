@@ -1,0 +1,23 @@
+# Core Django
+Django==4.2.7
+
+# ImageField support
+Pillow==10.0.0
+
+# Environment variable management
+python-decouple==3.8
+
+# PostgreSQL (if using it instead of SQLite)
+psycopg2-binary==2.9.9
+
+# Gunicorn for production (especially in Docker)
+gunicorn==21.2.0
+
+# Whitenoise for static file serving
+whitenoise==6.6.0
+
+# Django CORS headers (optional for APIs)
+django-cors-headers==4.3.1
+
+# For Kubernetes health checks (optional)
+django-health-check==3.17.0
